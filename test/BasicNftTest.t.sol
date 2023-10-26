@@ -5,10 +5,9 @@ pragma solidity ^0.8.19;
 import {DeployBasicNft} from "../script/DeployBasicNft.s.sol";
 import {BasicNft} from "../src/BasicNft.sol";
 import {Test, console} from "forge-std/Test.sol";
-import {StdCheats} from "forge-std/StdCheats.sol";
 import {MintBasicNft} from "../script/Interactions.s.sol";
 
-contract BasicNftTest is StdCheats, Test {
+contract BasicNftTest is Test {
     string constant NFT_NAME = "Dogie";
     string constant NFT_SYMBOL = "DOG";
     BasicNft public basicNft;
