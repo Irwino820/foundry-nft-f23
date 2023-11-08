@@ -53,5 +53,3 @@ mintMoodNft:
 
 flipMoodNft:
 	@forge script script/Interactions.s.sol:FlipMoodNft $(NETWORK_ARGS)
-
-
